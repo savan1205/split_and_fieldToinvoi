@@ -1,0 +1,21 @@
+<odoo>
+    <record id="sal_invoice_inherit_line" model="ir.ui.view">
+        <field name="name">account.move.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            
+
+            <xpath expr="//field[@name='invoice_date']" position="after">
+                <field name='vendor'/>
+                <field name='city_name'/>
+            </xpath>
+
+            <xpath expr="/form/sheet/notebook/page/field[@name='invoice_line_ids']/tree/field[@name='quantity']" position="after">
+                <field name='weight'/>
+                <field name='manu_before'/>
+            </xpath>
+        </field>     
+        
+    </record>
+</odoo>    

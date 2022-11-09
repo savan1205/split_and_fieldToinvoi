@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+sale_invoicing.access_split_wizard,access_split_wizard,sale_invoicing.model_split_wizard,base.group_user,1,1,1,1
+
+sale_invoicing.access_split_split,access_split_split,sale_invoicing.model_split_split,base.group_user,1,1,1,1
